@@ -1,7 +1,7 @@
 require 'friendly_id'
 
 module Tlab
-  class Post < ActiveRecord::Base
+  class Post < ApplicationRecord
     extend FriendlyId
     friendly_id :title, use: :history
 
