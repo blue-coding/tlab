@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.2"
   s.add_dependency "cancan"
-  s.add_dependency "simple_form", "~> 3.0.0"
+  s.add_dependency "simple_form", "~> 5.0.0"
   s.add_dependency "friendly_id", "~> 5.0.0"
   s.add_dependency "will_paginate", "~> 3.0"
   s.add_dependency "draper"
