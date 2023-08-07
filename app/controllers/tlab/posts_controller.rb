@@ -56,7 +56,7 @@ module Tlab
     private
       # Only allow a trusted parameter "white list" through.
       def post_params
-        params.require(:post).permit(:title, :preview, :published_at, :author_id, :body, :slug)
+        params.require(:post).permit(:title, :preview, :published_at, :author_id, :body, :slug, :cover_image)
       end
 
       def filter_params

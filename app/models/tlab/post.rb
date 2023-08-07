@@ -9,6 +9,10 @@ module Tlab
     attr_accessor :author_name
     belongs_to :author, class_name: Tlab.author_class
 
+    has_attached_file :cover_image
+
+    validates_attachment_content_type :cover_image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+
     scope :most_recent, ->(n = 3) { order("published_at desc").first(n) }
 
     self.per_page = 10
